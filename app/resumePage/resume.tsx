@@ -1,5 +1,5 @@
-import Navbar from '../../components/header';
-import { ResumePDFCard } from '../../components/ResumePDFCard';
+import Navbar from '../components/header';
+import { ResumePDFCard } from '../components/ResumePDFCard';
 
 const ResumePage = () => {
   return (
