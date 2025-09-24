@@ -1,7 +1,7 @@
 "use client";
 
-import Navbar from '../components/header';
-import { IndBox } from '../components/IndependentCard';
+import Navbar from "../components/header";
+import { IndBox } from "../components/IndependentCard";
 
 const ProjPage = () => {
   return (
@@ -25,7 +25,12 @@ const ProjPage = () => {
                 title="FinTech Agentic AI"
                 org={
                   <div className="h-32 overflow-auto">
-                    Developed a financial AI agent designed to assist users in making intelligent, automated investment and budgeting decisions. The project leverages machine learning algorithms and predictive analytics to optimize personal finance management, providing insights into spending patterns, risk assessment, and portfolio optimization.
+                    Developed a financial AI agent designed to assist users in
+                    making intelligent, automated investment and budgeting
+                    decisions. The project leverages machine learning
+                    algorithms and predictive analytics to optimize personal
+                    finance management, providing insights into spending
+                    patterns, risk assessment, and portfolio optimization.
                   </div>
                 }
                 color="#fbceb1"
@@ -40,7 +45,13 @@ const ProjPage = () => {
                 title="Soarin' Around the World"
                 org={
                   <div className="h-32 overflow-auto">
-                    Created a virtual travel adventure application aimed at increasing digital literacy among older communities. The app enables immersive experiences around global destinations, combining interactive navigation, educational content, and gamified challenges to help seniors become more comfortable with technology while exploring cultural and historical landmarks.
+                    Created a virtual travel adventure application aimed at
+                    increasing digital literacy among older communities. The app
+                    enables immersive experiences around global destinations,
+                    combining interactive navigation, educational content, and
+                    gamified challenges to help seniors become more comfortable
+                    with technology while exploring cultural and historical
+                    landmarks.
                   </div>
                 }
                 color="#ffcbdb"
@@ -55,7 +66,13 @@ const ProjPage = () => {
                 title="EEG-Based Music Classification"
                 org={
                   <div className="h-32 overflow-auto">
-                    Designed a research project using EEG signals to classify melodies and musical patterns. The system analyzes brainwave data to detect and differentiate between musical sequences, providing insights into neural responses to music. This project bridges neuroscience and computer science, with potential applications in music therapy and brain-computer interface research.
+                    Designed a research project using EEG signals to classify
+                    melodies and musical patterns. The system analyzes brainwave
+                    data to detect and differentiate between musical sequences,
+                    providing insights into neural responses to music. This
+                    project bridges neuroscience and computer science, with
+                    potential applications in music therapy and brain-computer
+                    interface research.
                   </div>
                 }
                 color="#b1ddc9"
@@ -70,7 +87,12 @@ const ProjPage = () => {
                 title="KSU Housing Market Prediction"
                 org={
                   <div className="h-32 overflow-auto">
-                    Developed a data science model to predict housing market trends using historical real estate data. Leveraged machine learning techniques, including regression analysis and feature engineering, to forecast prices and assess market dynamics. The project provides actionable insights for potential homebuyers, investors, and policy planners.
+                    Developed a data science model to predict housing market
+                    trends using historical real estate data. Leveraged machine
+                    learning techniques, including regression analysis and
+                    feature engineering, to forecast prices and assess market
+                    dynamics. The project provides actionable insights for
+                    potential homebuyers, investors, and policy planners.
                   </div>
                 }
                 color="#6cd0d0"
