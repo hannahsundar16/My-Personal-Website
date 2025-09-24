@@ -1,63 +1,80 @@
 import Navbar from '../components/header';
 import { UCProjectBox } from '../components/UnclickableCard';
 
-const ProjPage = () => {
+const ExpPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div>
       <div className="block mb-4 w-full">
         <Navbar />
       </div>
-      <section id="proj" className="w-full flex flex-col items-center">
-        <div className="flex items-center justify-center w-full mb-6">
+
+      <section id="exp">
+        <div className="flex items-center justify-center w-full">
           <div className="bg-white p-3 rounded-lg">
             <h1 className="text-4xl font-bold text-center bg-clip-text underline text-black bg-gradient-to-r from-[#ffcbdb] to-[#fbceb1]">
-              Recent Projects
+              Recent Experience
             </h1>
           </div>
-        </div>  
+        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center items-center max-w-5xl">
-
+        <div className="w-screen grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 place-items-center gap-6 pt-6 pb-10 xl:p-10 px-6">
           <UCProjectBox
-            title="FinTech Agentic AI"
-            org="Independent Project"
-            date="2025"
-            desc={`Developed an intelligent financial AI agent to assist users in investment and budgeting decisions. Leveraged predictive analytics and machine learning algorithms to provide actionable insights on spending patterns, portfolio optimization, and risk assessment. Designed the system to be user-friendly and adaptive, helping individuals make informed financial choices with minimal technical expertise.`}
+            title="STEM@GTRI Intern"
+            org="CIPHER Lab"
+            date="2025 - Present"
+            desc="As an intern with the Athena Initiative, I research attack strategies targeting large language models. My projects focus on adversarial perturbations, prompt injection, and model extraction. Through this work, I am contributing to the safety and resilience of AI systems. I also collaborate with peers to analyze emerging threats in machine learning. This internship has deepened my interest in ethical AI and responsible research practices."
             color="#fbceb1"
             borderColor="#e0b594"
           />
 
           <UCProjectBox
-            title="Soarin' Around the World"
-            org="Independent Project"
-            date="2025"
-            desc={`Created a virtual travel adventure application aimed at increasing digital literacy among older communities. The app provides immersive experiences around global destinations, combining interactive navigation, gamified challenges, and educational content. Encourages seniors to engage with technology in a meaningful way while exploring cultural and historical landmarks.`}
-            color="#ffcbdb"
-            borderColor="#fa98b6"
-          />
-
-          <UCProjectBox
-            title="EEG-Based Music Classification"
-            org="Independent Research Project"
-            date="2025"
-            desc={`Designed a system to classify melodies and musical patterns using EEG signals. Analyzed brainwave data to detect and differentiate musical sequences, providing insight into neural responses to music. This project bridges neuroscience and computer science and has potential applications in music therapy, brain-computer interfaces, and cognitive research.`}
+            title="Athena Initiative Intern"
+            org="Athena Initiative"
+            date="2025 - Present"
+            desc="I serve as a STEM@GTRI intern at the CIPHER Lab, where I support initiatives that empower young women in technology. I assist with planning and managing outreach activities designed to increase interest in STEM across Atlanta. My work emphasizes fostering collaboration and mentoring girls exploring careers in science and engineering. This role has given me exposure to professional research environments and leadership in technical outreach. I continue to strengthen both my technical and organizational skills in this internship."
             color="#b1ddc9"
             borderColor="#86b0a0"
           />
 
           <UCProjectBox
-            title="KSU Housing Market Prediction"
-            org="Kennesaw State University"
-            date="2024"
-            desc={`Developed a data science model to predict housing market trends using historical real estate data. Utilized regression analysis, feature engineering, and predictive modeling to forecast housing prices and assess market dynamics. The project provides actionable insights for potential homebuyers, investors, and policy planners, highlighting key factors driving market fluctuations.`}
+            title="Stanford Harris Neuroscience Intern"
+            org="Stanford University"
+            date="Summer 2025"
+            desc="I was selected as one of 12 students nationwide for the Stanford Harris Neuroscience Internship. This year-long program will expose me to cutting-edge neuroscience research. I will participate in journal club sessions to learn from faculty and peers. The internship will strengthen my understanding of experimental methods and scientific communication. It also motivated me to pursue further study in neuroscience and medicine."
             color="#6cd0d0"
             borderColor="#519e9e"
           />
 
+          <UCProjectBox
+            title="Founder"
+            org="Rhythms of Joy"
+            date="2021 - Present"
+            desc="I founded Rhythms of Joy to bring music and service to senior citizens. Over four years, I organized more than 70 concerts across local senior living facilities. I recruited student musicians and coordinated performances to foster intergenerational connections. The program has impacted hundreds of residents, creating meaningful community engagement. For this work, I received the Gold President’s Volunteer Service Award and was featured in the Forsyth County News."
+            color="#ffcbdb"
+            borderColor="#fa98b6"
+          />
+
+          <UCProjectBox
+            title="National Tournament Director & Chapter Head of Georgia"
+            org="Mustang Math"
+            date="2021 - Present"
+            desc="I serve as the Tournament Director for Mustang Math in Georgia, running competitions across schools statewide. I lead a development team through bi-weekly meetings to prepare events. My outreach has expanded participation to over 600 students in the U.S. and 1,000 internationally. I regularly present at MathCounts competitions to recruit new students. Through this work, I have promoted math education and leadership opportunities for middle schoolers."
+            color="#fbceb1"
+            borderColor="#e0b594"
+          />
+
+          <UCProjectBox
+            title="Vice President"
+            org="Girls Who Code @ SFHS"
+            date="2025 - Present"
+            desc="As Vice President of the Girls Who Code chapter at SFHS, I provide coding opportunities for girls across the country. I support hackathons that empower underrepresented genders in technology. I also help develop sponsorships and partnerships to grow chapter resources. Our group fosters digital literacy and encourages girls to pursue careers in computer science. This role combines my passion for leadership and technical advocacy."
+            color="#b1ddc9"
+            borderColor="#86b0a0"
+          />
         </div>
       </section>
     </div>
   );
 };
 
-export default ProjPage;
+export default ExpPage;

@@ -35,7 +35,7 @@ export default function Home() {
                 Hannah Sundar
               </h1>
               <h2 className="text-2xl font-semibold text-[#6cd0d0] mb-3">
-                Software Developer
+                Human-Computer Interaction Engineering Lead
               </h2>
               <p className="text-md sm:text-lg text-gray-700">
                 High School Junior based in Atlanta with interests in AI, Machine Learning, and Web Development
