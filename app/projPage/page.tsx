@@ -3,7 +3,7 @@
 import Navbar from '../components/header';
 import { IndBox } from '../components/IndependentCard';
 
-const projPage = () => {
+const ProjPage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="block mb-4 w-full">
@@ -19,9 +19,8 @@ const projPage = () => {
         </div>
 
         <div className="max-w-7xl w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
-
-          <a href="#" target="_blank" rel="noopener noreferrer" className="inline-block mt-4">
-            <div className="w-96 h-72 p-2">
+          <div className="inline-block mt-4">
+            <div className="w-full max-w-96 h-72 p-2">
               <IndBox
                 title="FinTech Agentic AI"
                 org={
@@ -33,10 +32,10 @@ const projPage = () => {
                 borderColor="#e0b594"
               />
             </div>
-          </a>
+          </div>
 
-          <a href="#" target="_blank" rel="noopener noreferrer" className="inline-block mt-4">
-            <div className="w-96 h-72 p-2">
+          <div className="inline-block mt-4">
+            <div className="w-full max-w-96 h-72 p-2">
               <IndBox
                 title="Soarin' Around the World"
                 org={
@@ -48,10 +47,10 @@ const projPage = () => {
                 borderColor="#fa98b6"
               />
             </div>
-          </a>
+          </div>
 
-          <a href="#" target="_blank" rel="noopener noreferrer" className="inline-block mt-4">
-            <div className="w-96 h-72 p-2">
+          <div className="inline-block mt-4">
+            <div className="w-full max-w-96 h-72 p-2">
               <IndBox
                 title="EEG-Based Music Classification"
                 org={
@@ -63,10 +62,10 @@ const projPage = () => {
                 borderColor="#86b0a0"
               />
             </div>
-          </a>
+          </div>
 
-          <a href="#" target="_blank" rel="noopener noreferrer" className="inline-block mt-4">
-            <div className="w-96 h-72 p-2">
+          <div className="inline-block mt-4">
+            <div className="w-full max-w-96 h-72 p-2">
               <IndBox
                 title="KSU Housing Market Prediction"
                 org={
@@ -78,12 +77,11 @@ const projPage = () => {
                 borderColor="#519e9e"
               />
             </div>
-          </a>
-
+          </div>
         </div>
       </section>
     </div>
   );
 };
 
-export default projPage;
+export default ProjPage;

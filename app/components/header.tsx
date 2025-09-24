@@ -38,14 +38,6 @@ export default function Navbar() {
       icon: <Award size={28} color="#000" />,
       bg: '#ffcbdb',
     },
-    {
-      name: 'Resume',
-      href: 'HannahResume.pdf',
-      target:"_blank" ,
-      rel:"noopener noreferrer",
-      icon: <Newspaper size={28} color="#000" />,
-      bg: '#6cd0d0',
-    },
   ];
 
   return (
@@ -66,7 +58,6 @@ export default function Navbar() {
               {item.icon}
             </Link>
 
-            {/* Always reserve space for label, but show/hide with opacity */}
             <span
               className={`absolute mt-12 text-xs sm:text-sm absolute top-full mt-2 text-black font-medium transition-opacity duration-500 ${
                 hovered === item.name ? 'opacity-100' : 'opacity-0'
@@ -76,6 +67,31 @@ export default function Navbar() {
             </span>
           </div>
         ))}
+        
+        {/* Separate Resume link to handle PDF properly */}
+        <div
+          className="relative flex flex-col items-center group cursor-pointer transition-transform duration-500 ease-in-out hover:scale-110"
+          onMouseEnter={() => setHovered('Resume')}
+          onMouseLeave={() => setHovered(null)}
+        >
+          <a
+            href="/HannahResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full transition-colors duration-500"
+            style={{ backgroundColor: '#6cd0d0' }}
+          >
+            <Newspaper size={28} color="#000" />
+          </a>
+
+          <span
+            className={`absolute mt-12 text-xs sm:text-sm absolute top-full mt-2 text-black font-medium transition-opacity duration-500 ${
+              hovered === 'Resume' ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            Resume
+          </span>
+        </div>
       </div>
     </nav>
   );
